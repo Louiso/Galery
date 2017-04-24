@@ -1,0 +1,112 @@
+.card-profile {
+    @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+    @import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+    .snip1344 {
+        font-family: 'Open Sans', Arial, sans-serif;
+        position: relative;
+        float: left;
+        overflow: hidden;
+        margin: 10px 1%;
+        min-width: 230px;
+        max-width: 315px;
+        height: 315px;
+        width: 100%;
+        color: #ffffff;
+        text-align: center;
+        line-height: 1.4em;
+        background-color: rgba(#0c143d, 0.42);
+    }
+
+    .snip1344 * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all 0.25s ease;
+        transition: all 0.25s ease;
+    }
+
+    .snip1344 .background {
+        width: 100%;
+        vertical-align: top;
+        //Agrega opacidad
+        opacity: 0.2;
+        //Ponen borroso
+        //grayscale : pone la imagen en gris
+        //blur : quita el enfoque
+        -webkit-filter: grayscale(80%) blur(5px);
+        filter: grayscale(80%) blur(5px);
+        //Agregan el efecto suave de acercarse
+        -webkit-transition: all 2s ease;
+        transition: all 2s ease;
+        border-radius: 10%;
+    }
+
+    .snip1344 figcaption {
+        width: 100%;
+        padding: 15px 25px;
+        position: absolute;
+        left: 0;
+        top: 50%;
+    }
+
+    .snip1344 .profile {
+        //De esa manera la foto de perfil es circular
+        border-radius: 50%;
+        //La posicion absoluta: con esa podemos usar botom y left
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        //Le damos un maximo ancho
+        max-width: 100px;
+
+        opacity: 1;
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        //Usado para posicionar correctamente la figura dentro del perfil
+        -webkit-transform: translate(-50%, 0%);
+        transform: translate(-50%, 0%);
+    }
+
+    .snip1344 h3 {
+        margin: 0 0 5px;
+        font-weight: 400;
+    }
+
+    .snip1344 h3 span {
+        display: block;
+        font-size: 0.6em;
+        color: #f39c12;
+        opacity: 0.75;
+    }
+
+    .snip1344 i {
+        padding: 10px 5px;
+        display: inline-block;
+        font-size: 32px;
+        color: #ffffff;
+        text-align: center;
+        opacity: 0.65;
+    }
+
+    .snip1344 a {
+        text-decoration: none;
+    }
+
+    .snip1344 i:hover {
+        opacity: 1;
+        -webkit-transition: all 0.35s ease;
+        transition: all 0.35s ease;
+    }
+
+    .snip1344.hover .background,
+    .snip1344:hover .background {
+        -webkit-filter: grayscale(0%) blur(0px);
+        filter: grayscale(0%) blur(0px);
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+}
+/* Demo purposes only */
+body {
+  background-color: #212121;
+}

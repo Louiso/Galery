@@ -1,0 +1,26 @@
+.button-auth{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    button{
+      font-family: sans-serif;
+      color:white;
+      font-size: 0.9em;
+      background-color: $colorRojo;
+      border-color: transparent;
+      outline:none;
+      border-style : solid;
+      padding:10px;
+      filter:grayscale(80%);
+    }
+    .button-login{
+      border-radius: 5px 0px 0px 5px;
+
+    }
+    .button-sing-up{
+      border-radius: 0px 5px 5px 0px;
+    }
+    button:hover{
+      filter:grayscale(0%);
+    }
+}

@@ -1,0 +1,55 @@
+aside{
+  /*Celulares*/
+  width: 100%;
+  /*Tablets*/
+  @media only screen and (min-width: 600px) {
+    width: 24.999%;
+  }
+  /*Destoks*/
+  @media only screen and (min-width: 1080px) {
+    width: 16.666%;
+  }
+  float: left;
+  padding:$padding;
+
+  ul {
+    list-style-type: none;
+
+    li {
+      margin:5px;
+      a {
+        font-family: sans-serif;
+        display: inline-block;
+        background-color: $colorMorado;
+        text-decoration: none;
+        color: $colorHueso;
+        padding: 15px;
+        width: 100%;
+        filter: opacity(90%);
+        padding-left: 5%;
+        box-shadow: 0px 0px 10px black;
+        border-radius: 3%;
+        transition: 0.5s;
+      }
+
+      a:hover {
+        background-color: rgb(20, 5, 41);
+        color: white;
+      }
+      ul{
+        width: 90%;
+        float:right;
+        li{
+          width: 95%;
+          a{
+            padding:10px;
+            font-size: .8em;
+            color: $colorMorado;
+            background-color: $colorHueso;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}

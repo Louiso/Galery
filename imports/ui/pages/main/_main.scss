@@ -1,0 +1,52 @@
+.main {
+    nav {
+      background-color: rgb(15, 21, 36);
+      overflow: hidden;
+      // padding-right: 0%;
+      width: 100%;
+      height: 50px;
+      position: relative;
+
+      ul {
+          position: absolute;
+          list-style-type: none;
+          left:17.5%;
+          li {
+              float: left;
+
+              a {
+                  text-decoration: none;
+                  display: inline-block;
+                  padding: 15px;
+                  color: white;
+                  font-family: sans-serif;
+                  border-bottom-style: solid;
+                  border-bottom-color: transparent;
+                  border-bottom-width: thin;
+                  transition: 0.5s;
+              }
+
+              a:hover {
+                  color: $colorLila;
+                  border-bottom-color: $colorLila;
+              }
+          }
+      }
+
+    }
+
+    .container {
+        /*Celulares*/
+        width: 100%;
+        /*Tablets*/
+        @media only screen and (min-width: 600px) {
+          width: 75%;
+        }
+        /*Destoks*/
+        @media only screen and (min-width: 1080px) {
+          width: 83.333%;
+        }
+        float: left;
+        padding: $padding;
+    }
+}
